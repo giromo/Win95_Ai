@@ -321,13 +321,13 @@ body {
 .start-logo {
   vertical-align: middle;
   margin: 0; /* حذف تمام حاشیه‌ها */
-  width: 56px; /* افزایش عرض برای اندازه بزرگ‌تر و واضح */
-  height: 44px; /* تنظیم ارتفاع برای تناسب */
+  width: 60px; /* بزرگ‌تر از ساعت (50px) برای دسکتاپ */
+  height: 40px; /* تنظیم ارتفاع برای تناسب */
 }
 .task-menu {
   position: absolute;
   left: 0;
-  bottom: 30px; /* تنظیم برای هماهنگی با اندازه جدید */
+  bottom: 40px; /* تنظیم برای هماهنگی با اندازه جدید دکمه */
   background: #c0c0c0;
   border: 2px solid #000080;
   border-top-color: #ffffff;
@@ -521,7 +521,7 @@ a:hover {
   }
   .task-menu {
     left: 0;
-    bottom: 28px; /* تنظیم برای هماهنگی با اندازه جدید */
+    bottom: 34px; /* تنظیم برای هماهنگی با اندازه جدید */
     min-width: 180px;
   }
   .task-menu-sidebar {
@@ -547,7 +547,7 @@ a:hover {
     height: 14px;
   }
   .start-logo {
-    width: 42px; /* اندازه بزرگ‌تر برای موبایل */
-    height: 32px; /* تنظیم ارتفاع برای تناسب */
+    width: 50px; /* بزرگ‌تر از ساعت برای موبایل */
+    height: 34px; /* تنظیم ارتفاع برای تناسب */
   }
 }
