@@ -16,6 +16,41 @@ body {
   z-index: 0;
 }
 
+/* استایل برای آیکون‌های تزئینی در پس‌زمینه */
+.desktop-icons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 5; /* زیر کادر چت */
+}
+
+.desktop-icon {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* استایل برای هر آیکون */
+.icon-recycle-bin {
+  background-image: url('icons/appwiz_1503.ico');
+}
+
+.icon-computer {
+  background-image: url('icons/msnstart_110.ico');
+}
+
+.icon-msnstart {
+  background-image: url('icons/msnstart_120.ico');
+}
+
+.icon-shdocvw {
+  background-image: url('icons/shdocvw_257.ico');
+}
+
 .window {
   position: absolute;
   background: #c0c0c0; /* خاکستری ویندوز 98 */
@@ -32,7 +67,7 @@ body {
   z-index: 10;
   max-width: 90vw;
   width: 520px;
-  left: 5vw !important;
+  left: 50vw !important; /* تغییر به سمت راست */
   top: 5vh !important;
 }
 
@@ -494,7 +529,7 @@ a:hover {
   .window {
     width: 90vw !important;
     min-height: 70vh;
-    left: 5vw !important;
+    left: 5vw !important; /* در موبایل به حالت قبلی برگردد */
     top: 5vh !important;
   }
   .error-window {
@@ -509,6 +544,14 @@ a:hover {
   .clock {
     margin-left: auto;
     font-size: 10px;
+  }
+  .desktop-icons {
+    left: 10px;
+    gap: 15px;
+  }
+  .desktop-icon {
+    width: 24px;
+    height: 24px;
   }
   #start-btn {
     margin-right: 0;
