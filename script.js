@@ -155,8 +155,8 @@ function createNewChatWindow() {
   const newWindow = document.createElement('div');
   newWindow.className = 'window';
   newWindow.id = windowId;
-  newWindow.style.left = `${15 + windowCount * 20}vw`; // جابجایی به راست
-  newWindow.style.top = `${5 + windowCount * 20}vh`;
+  newWindow.style.left = `${40 + windowCount * 20}px`;
+  newWindow.style.top = `${40 + windowCount * 20}px`;
   newWindow.style.width = '520px';
   newWindow.style.minHeight = '380px';
   newWindow.innerHTML = `
@@ -205,7 +205,7 @@ function createNewChatWindow() {
     <form class="chat-form" autocomplete="off">
       <input type="text" class="chat-input" placeholder="Ask anything…" autocomplete="off" />
       <button type="submit" class="send-btn">Send</button>
-      <img src="icons/Wait.png" alt="spinner" class="spinner hidden" width="16" height="16">
+      <div class="spinner hidden"></div>
     </form>
     <div class="footer"></div>
     <div class="resize-handle"></div>
