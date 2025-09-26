@@ -510,7 +510,7 @@ if (menuNewChat) {
 }
 if (menuSource) {
   menuSource.addEventListener('click', function () {
-    window.open('https://github.com/rauchg/wingpt');
+    window.open('https://github.com/Argh94'); // تغییر لینک به GitHub.com/Argh94
     taskMenu.classList.add('hidden');
     console.log('Source menu item clicked');
   });
