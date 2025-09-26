@@ -321,8 +321,8 @@ body {
 .start-logo {
   vertical-align: middle;
   margin: 0; /* حذف تمام حاشیه‌ها */
-  width: 55px; /* بزرگ‌تر از ساعت (50px) برای دسکتاپ */
-  height: 60px; /* تنظیم ارتفاع برای تناسب */
+  width: 50px; /* بزرگ‌تر از ساعت (50px) برای دسکتاپ */
+  height: 78px; /* تنظیم ارتفاع برای تناسب */
 }
 .task-menu {
   position: absolute;
@@ -548,6 +548,6 @@ a:hover {
   }
   .start-logo {
     width: 50px; /* بزرگ‌تر از ساعت برای موبایل */
-    height: 44px; /* تنظیم ارتفاع برای تناسب */
+    height: 54px; /* تنظیم ارتفاع برای تناسب */
   }
 }
