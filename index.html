@@ -9,25 +9,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="desktop-background">
-    <div class="desktop-icons">
-      <div class="desktop-icon">
-        <img src="icons/appwiz_1503.ico" alt="Recycle Bin" class="icon">
-        <span>Recycle Bin</span>
-      </div>
-      <div class="desktop-icon">
-        <img src="icons/gcdef_100.ico" alt="My Computer" class="icon">
-        <span>My Computer</span>
-      </div>
-      <div class="desktop-icon">
-        <img src="icons/shdocvw_257.ico" alt="Network" class="icon">
-        <span>Network</span>
-      </div>
-    </div>
-  </div>
+  <div id="desktop-background"></div>
 
   <!-- Chat Window -->
-  <div class="window" id="chat-window" style="left: 15vw; top: 5vh; width: 520px; min-height: 380px;">
+  <div class="window" id="chat-window" style="left: 40px; top: 40px; width: 520px; min-height: 380px;">
     <div class="window-header" id="chat-header">
       <img src="icons/gpt.png" alt="chat-icon" class="window-icon">
       <span>WinGPT</span>
@@ -73,7 +58,7 @@
     <form id="chat-form" autocomplete="off">
       <input type="text" id="chat-input" placeholder="Ask anything…" autocomplete="off" />
       <button type="submit" id="send-btn">Send</button>
-      <img src="icons/Wait.png" alt="spinner" class="spinner hidden" width="16" height="16">
+      <div id="spinner" class="spinner hidden"></div>
     </form>
     <div class="footer" id="chat-footer"></div>
     <div class="resize-handle"></div>
@@ -86,7 +71,6 @@
       <button class="close-btn" id="close-error" title="Close"></button>
     </div>
     <div class="error-content">
-      <img src="icons/confcp_118.ico" alt="warning" class="error-icon" width="32" height="32">
       <p id="error-message">An error occurred.</p>
       <button id="error-ok-btn">OK</button>
     </div>
@@ -95,7 +79,7 @@
   <!-- TaskBar -->
   <div class="task-bar">
     <button id="start-btn">
-      <img src="icons/btn-windows-default.png" alt="logo" class="start-logo" width="16" height="16">
+      <img src="icons/gpt.png" alt="logo" class="start-logo" width="16" height="16">
       Start
     </button>
     <div class="task-menu hidden" id="task-menu">
