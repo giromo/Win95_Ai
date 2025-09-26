@@ -321,8 +321,8 @@ body {
 .start-logo {
   vertical-align: middle;
   margin: 0; /* حذف تمام حاشیه‌ها */
-  width: 80px; /* افزایش عرض برای دسکتاپ */
-  height: 40px; /* حفظ ارتفاع استاندارد */
+  width: 110px; /* افزایش عرض برای دسکتاپ */
+  height: 35px; /* حفظ ارتفاع استاندارد */
 }
 .task-menu {
   position: absolute;
