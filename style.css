@@ -310,21 +310,24 @@ body {
   border: none; /* حذف کادر */
   padding: 0; /* حذف padding */
   cursor: pointer;
+  margin: 0; /* حذف حاشیه خارجی */
+  box-shadow: none; /* حذف سایه */
 }
 #start-btn:active {
   background: transparent; /* حفظ شفافیت هنگام کلیک */
   border: none; /* حذف کادر هنگام کلیک */
+  box-shadow: none; /* حذف سایه هنگام کلیک */
 }
 .start-logo {
   vertical-align: middle;
-  margin-left: 2px;
-  width: 32px; /* افزایش عرض برای اندازه معمولی */
-  height: 20px; /* تنظیم ارتفاع برای تناسب */
+  margin: 0; /* حذف تمام حاشیه‌ها */
+  width: 36px; /* افزایش عرض برای اندازه بزرگ‌تر و واضح */
+  height: 24px; /* تنظیم ارتفاع برای تناسب */
 }
 .task-menu {
   position: absolute;
-  left: 2px;
-  bottom: 32px;
+  left: 0;
+  bottom: 30px; /* تنظیم برای هماهنگی با اندازه جدید */
   background: #c0c0c0;
   border: 2px solid #000080;
   border-top-color: #ffffff;
@@ -513,10 +516,12 @@ a:hover {
     padding: 0; /* حذف padding برای موبایل */
     background: transparent; /* حذف پس‌زمینه برای موبایل */
     border: none; /* حذف کادر برای موبایل */
+    box-shadow: none; /* حذف سایه برای موبایل */
+    margin: 0; /* حذف حاشیه خارجی */
   }
   .task-menu {
-    left: 2px;
-    bottom: 30px;
+    left: 0;
+    bottom: 28px; /* تنظیم برای هماهنگی با اندازه جدید */
     min-width: 180px;
   }
   .task-menu-sidebar {
@@ -542,7 +547,7 @@ a:hover {
     height: 14px;
   }
   .start-logo {
-    width: 28px; /* اندازه معمولی برای موبایل */
-    height: 18px; /* تنظیم ارتفاع برای تناسب */
+    width: 32px; /* اندازه بزرگ‌تر برای موبایل */
+    height: 22px; /* تنظیم ارتفاع برای تناسب */
   }
 }
