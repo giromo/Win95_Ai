@@ -16,31 +16,6 @@ body {
   z-index: 0;
 }
 
-.desktop-icons {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.desktop-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ffffff;
-  font-size: 11px;
-  text-align: center;
-  width: 80px;
-}
-
-.desktop-icon img {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 4px;
-}
-
 .window {
   position: absolute;
   background: #c0c0c0; /* خاکستری ویندوز 98 */
@@ -57,6 +32,8 @@ body {
   z-index: 10;
   max-width: 90vw;
   width: 520px;
+  left: 5vw !important;
+  top: 5vh !important;
 }
 
 .window-header {
@@ -459,13 +436,24 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ساعت شنی */
+/* انیمیشن ساعت شنی به سبک ویندوز 98 */
 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
+  border: 2px solid #000000;
+  border-top-color: #c0c0c0;
+  border-left-color: #c0c0c0;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
   vertical-align: middle;
   margin-left: 4px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Error window styles */
@@ -482,21 +470,16 @@ a:hover {
 }
 .error-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 16px;
   font-size: 11px;
   background: #c0c0c0;
   height: 100%;
-  gap: 10px;
-}
-.error-content .error-icon {
-  width: 32px;
-  height: 32px;
 }
 .error-content p {
-  margin: 0;
+  margin: 0 0 16px 0;
   text-align: center;
   color: #000000;
 }
@@ -534,19 +517,6 @@ a:hover {
   .clock {
     margin-left: auto;
     font-size: 10px;
-  }
-  .desktop-icons {
-    left: 5px;
-    top: 5px;
-    gap: 10px;
-  }
-  .desktop-icon {
-    width: 60px;
-    font-size: 10px;
-  }
-  .desktop-icon img {
-    width: 24px;
-    height: 24px;
   }
   #start-btn {
     margin-right: 0;
