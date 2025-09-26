@@ -155,7 +155,7 @@ function createNewChatWindow() {
   const newWindow = document.createElement('div');
   newWindow.className = 'window';
   newWindow.id = windowId;
-  newWindow.style.left = `${15 + windowCount * 20}vw`;
+  newWindow.style.left = `${15 + windowCount * 20}vw`; // جابجایی به راست
   newWindow.style.top = `${5 + windowCount * 20}vh`;
   newWindow.style.width = '520px';
   newWindow.style.minHeight = '380px';
