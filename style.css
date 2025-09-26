@@ -67,7 +67,7 @@ body {
   z-index: 10;
   max-width: 90vw;
   width: 520px;
-  left: 50vw !important; /* تغییر به سمت راست */
+  left: 20vw !important; /* کمی به سمت راست (20% عرض صفحه) */
   top: 5vh !important;
 }
 
